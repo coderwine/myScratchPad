@@ -1,0 +1,29 @@
+// COLORS
+$blackColor: rgb(26,26,26);
+$whiteColor: rgb(232,232,232);
+$redColor: rgb(175,2,2);
+
+// FONTS
+$titleFont: Arial, Helvetica, sans-serif;
+$bodyFont: 'Times New Roman', Times, serif;
+
+//* Same "function" from MainPage.scss but now available in a "global" setting. 
+// MIXINS
+@mixin buttonStyle($color, $fontSize) {
+        width: 200px;
+        height: 40px;
+        // background-color: $redColor;
+        background-color: $color;
+        border: none;
+        border-radius: 18px;
+        color: $whiteColor;
+        // font-size: 16px;
+        font-size: $fontSize;
+}
+
+//* QUICK NOTES: 
+// mixin act like a function for our css.  you can pass in parameters in order to declare various styling of a property.
+
+// Its best to build out these variables and mixins into a "global type" of file that can be viewed by your scss files.
+
+// A Sass compiler is needed as the browser cannot read scss files.  These files are compiled into standard css and those are the files imported into components.

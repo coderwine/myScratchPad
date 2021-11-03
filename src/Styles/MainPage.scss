@@ -1,0 +1,41 @@
+@import './Variables/Variables.scss';
+
+// * created "function" for stylesheet.
+// @mixin buttonStyle {
+//     button {
+//         width: 200px;
+//         height: 40px;
+//         background-color: $redColor;
+//         border: none;
+//         border-radius: 8px;
+//         color: $whiteColor;
+//         font-size: 16px;
+//     }
+// }
+
+.mainPage {
+    display: flex;
+    justify-content: space-around;
+    // align-content: center;
+    height: 20vh;
+
+    h1 {
+        color: $redColor;
+    }
+
+    button {
+        @include buttonStyle($blackColor, 24px);
+    }
+    
+}
+
+//* Standard build
+// button {
+//     width: 200px;
+//     height: 40px;
+//     background-color: $redColor;
+//     border: none;
+//     border-radius: 8px;
+//     color: $whiteColor;
+//     font-size: 16px;
+// }

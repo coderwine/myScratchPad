@@ -1,0 +1,23 @@
+.mainPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 20vh;
+}
+
+.mainPage h1 {
+  color: #af0202;
+}
+
+.mainPage button {
+  width: 200px;
+  height: 40px;
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 18px;
+  color: #e8e8e8;
+  font-size: 24px;
+}
+/*# sourceMappingURL=MainPage.css.map */
