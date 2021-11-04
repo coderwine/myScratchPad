@@ -1,0 +1,47 @@
+.cycleTesting {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.cycle {
+    height: 15vh;
+    width: 20vw;
+    border: red .5em solid;
+    border-radius: 5em;
+    overflow: hidden;
+    padding: .5em;
+}
+
+&::before {
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: green;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(red, red), linear-gradient(blue, blue);
+    animation: rotate 4s linear infinite;
+}
+
+&::after {
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: white;
+}

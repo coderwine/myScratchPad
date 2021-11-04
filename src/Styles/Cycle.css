@@ -1,0 +1,57 @@
+.cycleTesting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cycleTesting .cycle {
+  height: 15vh;
+  width: 10vw;
+  border: black .5em solid;
+  border-radius: 5em;
+  overflow: hidden;
+  padding: .5em;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+.cycleTesting::before {
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: green;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(red)), -webkit-gradient(linear, left top, left bottom, from(blue), to(blue));
+  background-image: linear-gradient(red, red), linear-gradient(blue, blue);
+  -webkit-animation: rotate 4s linear infinite;
+          animation: rotate 4s linear infinite;
+}
+
+.cycleTesting::after {
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: white;
+}
+/*# sourceMappingURL=Cycle.css.map */
