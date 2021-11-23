@@ -1,3 +1,5 @@
 This is solely for me to practice various things using React and other various items of interest.
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=coderwine&theme=dark&hide_border=true&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
+Working on making Navbar set to left side of page (wiki style).  
+
+After set, would like to incorporate redux to handle state.  My idea is to have each practiced component build out the navbar.
