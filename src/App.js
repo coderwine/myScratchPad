@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'; 
 
 // Components
 import Navbar from './components/Navbar';
@@ -11,9 +12,14 @@ function App() {
   //NOTE: Would like to look into incorporating next.js or Redux in order to handle state management.
   return (
     <div className="App">
-        <Navbar />
-        <MainPage />
-        <Cycle />
+      <BrowserRouter>
+        {/*<Navbar />*/}
+        <Routes>
+          <Route path='/' element={<Navbar />} />
+        </Routes>
+      </BrowserRouter>
+        {/*<MainPage />
+        <Cycle />*/}
     </div>
   );
 }
