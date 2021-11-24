@@ -15,7 +15,9 @@ function App() {
       <BrowserRouter>
         {/*<Navbar />*/}
         <Routes>
-          <Route path='/' element={<Navbar />} />
+          <Route path='/' element={<Navbar />} >
+            <Route path='/cycle' element={<Cycle />} />
+          </Route>
         </Routes>
       </BrowserRouter>
         {/*<MainPage />
