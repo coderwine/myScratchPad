@@ -1,27 +1,39 @@
-// import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'; 
+import {
+  Routes, 
+  Route,
+  } from 'react-router-dom'; 
+// import { useState } from 'react';
+import navPath from './data/navPath';
 
 // Components
 import Navbar from './components/Navbar';
-import MainPage from './components/MainPage'
-import Cycle from './components/Cycle'
 
 function App() {
   //NOTE:  React Router Dom v6 installed.  Would like to build out a proper nav to swap between my scratch pad.
   //NOTE: Would like to look into incorporating next.js or Redux in order to handle state management.
+
+  const buildNavbar = () => {
+    return(
+      navPath.map(i => {
+        // let component = i.component;
+        // console.log(component);
+
+        return(
+          <Route path={`/${i.path.toLocaleLowerCase()}`} element={i.component} />
+        )
+      })
+    )
+  }
+
   return (
     <div className="App">
-      <BrowserRouter>
-        {/*<Navbar />*/}
         <Routes>
-          <Route path='/' element={<Navbar />} >
-            <Route path='/cycle' element={<Cycle />} />
+          <Route path='/' element={<Navbar items={navPath}/>} >
+            
+            {buildNavbar()}
           </Route>
         </Routes>
-      </BrowserRouter>
-        {/*<MainPage />
-        <Cycle />*/}
     </div>
   );
 }

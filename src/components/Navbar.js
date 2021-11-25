@@ -1,21 +1,19 @@
 import '../Styles/Navbar.css'
-// import { Route } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
-function Navbar() {
-
-    // Quick test Build
-
-    const routeBuild = () => {
-        return(
-            <>
-                <h2>Test</h2>
-            </> 
-        )
-    }
-
+function Navbar(props) {
+    
     return(
-        routeBuild()
-        
+        <div className="navbar">
+            <nav className="links">
+                {props.items.map((i,key) => {
+                    return(
+                        <Link key={key} to={`/${i.path.toLowerCase()}`}>{`${i.path}`}</Link>
+                    )
+                })}
+            </nav>
+            <Outlet />
+        </div> 
         )
     }
     

@@ -1,7 +1,7 @@
 import '../Styles/MainPage.css';
 
 
-function MainPage() {
+function Main() {
 
     return(
         <div className="mainPage">
@@ -11,4 +11,4 @@ function MainPage() {
     )
 }
 
-export default  MainPage;
+export default Main;
