@@ -1,3 +1,5 @@
+import '../Styles/Redux.css';
+
 const Redux = (props) => {
     return(
         <div className="pageDetails">

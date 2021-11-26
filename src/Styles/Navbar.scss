@@ -1,4 +1,5 @@
 // $blackColor: rgb(24,24,24); // Kept here for notes purposes
+
 @import './Variables/Variables.scss';
 
 body {
@@ -8,17 +9,18 @@ body {
 
 .navbar {
     height: 100vh;
-    width: 150px;
+    width: 100vw;
     background-color: $blackColor;
     display: flex;
 }
 
-.navbar .links {
+.links {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     padding: 0 20px;
+    width: 100px;
 }
 
 .navbar a {

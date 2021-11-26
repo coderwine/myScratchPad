@@ -32,7 +32,7 @@ function App() {
           <Route path='/' element={<Navbar items={navPath}/>} >
             
             {buildNavbar()}
-          </Route>
+            </Route>
         </Routes>
     </div>
   );

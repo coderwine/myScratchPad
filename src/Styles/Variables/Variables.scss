@@ -21,6 +21,16 @@ $bodyFont: 'Times New Roman', Times, serif;
         font-size: $fontSize;
 }
 
+@mixin forPageDisplay($color) {
+        display: flex;
+        justify-content: center;
+        font-size: 22pt;
+        height: 100vh;
+        width: 100%;
+        width: 100%;
+        background-color: $color;
+}
+
 //* QUICK NOTES: 
 // mixin act like a function for our css.  you can pass in parameters in order to declare various styling of a property.
 

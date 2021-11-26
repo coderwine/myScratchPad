@@ -1,3 +1,5 @@
+import '../Styles/Routing.css';
+
 const Routing = (props) => {
     return(
         <div className="pageDetails">
