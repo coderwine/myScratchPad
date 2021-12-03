@@ -12,4 +12,4 @@ const Sass = (props) => {
     )
 }
 
-export default Sass
+export default Sass;

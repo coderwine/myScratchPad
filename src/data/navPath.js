@@ -22,6 +22,14 @@ const navPath = [
         component: <Routing />,
         path: 'Routing'
     },
+    {
+        component: null,
+        path: 'Recoil'
+    },
+    {
+        component: null,
+        path: 'Storybook UI'
+    },
 
 ];
 

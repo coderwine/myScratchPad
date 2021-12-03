@@ -6,6 +6,7 @@ Working on making Navbar set to left side of page (wiki style).
     - Components are building through the full page.  Working trhough SaSS to update minor styling.  Setting up functioning variables.
     - Will like to build a base styling for each component.
     - Dynamic Navbar built.
+    - Will need a "base page display" component
 
 After set, would like to incorporate redux to handle state.  My idea is to have each practiced component build out the navbar.
 
